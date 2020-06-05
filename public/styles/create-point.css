@@ -1,13 +1,11 @@
 #page-create-point {
     width: 90%;
     max-width: 1100px;
-
     margin: 0 auto;
 }
 
 #page-create-point header {
     margin-top: 40px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +14,6 @@
 #page-create-point header a {
     color: var(--title-color);
     font-weight: bold;
-
     display: flex;
     align-items: center;
 }
@@ -24,20 +21,16 @@
 #page-create-point header a span {
     margin-right: 16px;
     background-image: url('../assets/icones/arrow-left.svg');
-
     display: flex;
-
     width: 20px;
     height: 24px;
 }
 
 form {
     background-color: white;
-
     margin: 80px auto;
     padding: 64px;
     border-radius: 8px;
-
     max-width: 730px;
 }
 
@@ -52,16 +45,24 @@ form fieldset {
 
 form legend {
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-form h2 {
+form legend h2 {
     font-size: 24px;
+}
+
+form legend span {
+    font-size: 14px;
+    color: var(--title-color);
 }
 
 form .field {
     display: flex;
     flex-direction: column;
-
     flex: 1;
     margin-bottom: 24px;
 }
@@ -70,12 +71,10 @@ form .field-group {
     display: flex;
 }
 
-form input,
-form select {
+form input, form select {
     background-color: #f0f0f5;
     border: 0;
     padding: 16px 24px;
-
     font-size: 16px;
     border-radius: 8px;
     outline: none;
@@ -89,27 +88,23 @@ form select {
 
 form label {
     font-size: 14px;
-
     margin-bottom: 8px;
 }
 
-form .field-group .field + .field {
+form .field-group .field+.field {
     margin-left: 24px;
 }
 
 form button {
     width: 260px;
     height: 56px;
-
     background-color: var(--primary-color);
     border-radius: 8px;
-
     color: white;
     font-weight: bold;
     font-size: 16px;
     margin-top: 40px;
     border: 0;
-
     transition: background-color 400ms;
 }
 
@@ -126,29 +121,23 @@ form button:hover {
 .items-grid li {
     background-color: #f5f5f5;
     list-style: none;
-
     border: 2px solid #f5f5f5;
     border-radius: 8px;
     height: 180px;
-
     padding: 32px 24px 16px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
     text-align: center;
     cursor: pointer;
 }
 
 .items-grid span {
-    margin-top:  12px;
-
+    margin-top: 12px;
     flex: 1;
     display: flex;
     align-items: center;
-
     color: var(--title-color);
 }
 
@@ -157,7 +146,6 @@ form button:hover {
     border: 2px solid #34cb79;
 }
 
-.items-grid li img,
-.items-grid li span {
+.items-grid li img, .items-grid li span {
     pointer-events: none;
 }
